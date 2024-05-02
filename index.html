@@ -36,7 +36,66 @@
         <button onclick="result()" id="sub" style="width: 100px; height: 40px;" type="submit">Submit</button>
         <button onclick="reset()" id="sub" style="width: 100px; height: 40px;" type="reset">Reset</button>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.js"></script>
-        <script src="./index.js"></script>  
+       <script>
+        var num = document.getElementById("customerNumber")
+var aname = document.getElementById("agentname")
+var butn = document.getElementById("sub")
+
+
+function result() {
+
+    if (aname.value == "" || num.value == "" || num.value == "null" || aname.value == "null") {
+        alert("Type the values and click submit")
+        window.location.reload();
+    }
+
+    console.log(aname.value)
+    console.log(num.value)
+    // window.parent.postMessage(
+    //     JSON.stringify({
+    //         "event_code": "ym-client-event",
+    //         "data": {
+    //             "cusNo" : num.value,
+    //             "agentName" : aname.value
+    //         }
+    //     }),)
+
+    // const axios = require('axios');
+    let data = JSON.stringify({
+        //  "sender": num.value,
+        "data": {
+            "cusNo": num.value,
+            "agentName": aname.value
+        }
+    });
+
+    let config = {
+        method: 'post',
+        maxBodyLength: Infinity,
+        url: 'https://cors-anywhere.herokuapp.com/https://cloud.yellow.ai/integrations/sendevent/data-from-genesys/x1713349981681',
+        headers: {
+            'x-api-key': 'ySj09lZvN4o6K1Xl1WYeBHVQtlvIMe5J2N6M9dU-',
+            'Content-Type': 'application/json'
+        },
+        data: data
+    };
+
+    axios.request(config)
+        .then((response) => {
+            console.log(JSON.stringify(response.data));
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+
+
+
+}
+
+function reset() {
+    window.location.reload();
+}
+       </script>
     </div>
 </body>
 </html>

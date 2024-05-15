@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 28px; /* Increased font size */
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Added margin for gap between label and input */
+}
+
+label {
+    margin-bottom: 10px; /* Increased gap between title and input box */
+    font-size: 18px; /* Increased font size */
+    color: #555;
+}
+
+input, select {
+    width: 100%; /* Ensured same width */
+    padding: 12px; /* Increased padding */
+    font-size: 16px; /* Increased font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    box-sizing: border-box; /* Ensured padding and border are included in width */
+}
+
+input:focus, select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 12px 24px; /* Increased padding */
+    font-size: 16px; /* Increased font size */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007BFF;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #023162;
+}
+
+button:active {
+    background-color: #003d80;
+}
+
+button[type="reset"] {
+    background-color: #6c757d;
+}
+
+button[type="reset"]:hover {
+    background-color: #010c14;
+}
+
+button[type="reset"]:active {
+    background-color: #434a50;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 20px; /* Increased font size */
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}

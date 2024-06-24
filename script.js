@@ -2,7 +2,7 @@ function validatePhoneNumber(input) {
   // Allow only numbers, '+', and '-' in the customer phone number input box
   input.value = input.value.replace(/[^0-9+\-\s]/g, "");
 }
-const disableSubmitButton = () => {
+function disableSubmitButton() {
   const button1 = document.getElementById("submitpage");
   button1.disabled = true;
   button1.style.cursor = "not-allowed";

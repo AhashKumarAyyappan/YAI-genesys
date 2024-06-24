@@ -3,11 +3,11 @@ function validatePhoneNumber(input) {
     input.value = input.value.replace(/[^0-9+\-\s]/g, '');
 }
   const disableSubmitButton = () => {
-const button1 = document.getElementById("button");
+const button1 = document.getElementById("submitpage");
       button1.disabled = true;
     };
 
-function submitForm(button) {
+function submitForm() {
 
 disableSubmitButton();
     

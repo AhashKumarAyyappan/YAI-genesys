@@ -5,6 +5,7 @@ function validatePhoneNumber(input) {
   const disableSubmitButton = () => {
 const button1 = document.getElementById("submitpage");
       button1.disabled = true;
+      button1.style.cursor = "not-allowed";
     };
 
 function submitForm() {

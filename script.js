@@ -10,7 +10,6 @@ const disableSubmitButton = () => {
 };
 
 function submitForm() {
-  disableSubmitButton();
 
   const customerMobileNo = document.getElementById("customerMobileNo").value;
   const agentName = document.getElementById("agentName").value;
@@ -26,6 +25,7 @@ function submitForm() {
     messageElement.style.display = "block";
     return;
   }
+  disableSubmitButton();
 
   // Prepare data for API call
   const data = {

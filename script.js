@@ -3,7 +3,9 @@ function validatePhoneNumber(input) {
     input.value = input.value.replace(/[^0-9+\-\s]/g, '');
 }
 
-function submitForm() {
+function submitForm(button) {
+    console.log("Button clicked!")           
+    button.disabled = true;
     const customerMobileNo = document.getElementById('customerMobileNo').value;
     const agentName = document.getElementById('agentName').value;
     const messageElement = document.getElementById('message');

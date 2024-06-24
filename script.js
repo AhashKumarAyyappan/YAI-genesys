@@ -12,7 +12,7 @@ const disableSubmitButton = () => {
   button1.style.opacity = "0.3";
    }
 };
- disableSubmitButton();
+
 
  function submitForm() {
 
@@ -30,7 +30,7 @@ const disableSubmitButton = () => {
     messageElement.style.display = "block";
     return;
   }
-
+ disableSubmitButton();
   // Prepare data for API call
   const data = {
     botId: "x1713349984836",

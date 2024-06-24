@@ -4,8 +4,12 @@ function validatePhoneNumber(input) {
 }
 
 function submitForm(button) {
-    console.log(button,"Button clicked!")           
-    button.disabled = true;
+const button1 = document.getElementById("submitpage");
+
+    const disableButton = () => {
+      button1.disabled = true;
+    };
+    
     const customerMobileNo = document.getElementById('customerMobileNo').value;
     const agentName = document.getElementById('agentName').value;
     const messageElement = document.getElementById('message');

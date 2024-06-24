@@ -8,8 +8,9 @@ const disableSubmitButton = () => {
   button1.style.cursor = "not-allowed";
   button1.style.opacity = "0.3";
 };
+ disableSubmitButton();
 
-function submitForm() {
+ function submitForm() {
 
   const customerMobileNo = document.getElementById("customerMobileNo").value;
   const agentName = document.getElementById("agentName").value;
@@ -25,7 +26,6 @@ function submitForm() {
     messageElement.style.display = "block";
     return;
   }
-  disableSubmitButton();
 
   // Prepare data for API call
   const data = {

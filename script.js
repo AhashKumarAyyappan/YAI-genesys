@@ -2,13 +2,14 @@ function validatePhoneNumber(input) {
     // Allow only numbers, '+', and '-' in the customer phone number input box
     input.value = input.value.replace(/[^0-9+\-\s]/g, '');
 }
-
-function submitForm(button) {
-const button1 = document.getElementById("submitpage");
-
-    const disableButton = () => {
+  const disableSubmitButton = () => {
+const button1 = document.getElementById("button");
       button1.disabled = true;
     };
+
+function submitForm(button) {
+
+disableSubmitButton();
     
     const customerMobileNo = document.getElementById('customerMobileNo').value;
     const agentName = document.getElementById('agentName').value;

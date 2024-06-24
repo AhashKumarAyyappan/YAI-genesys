@@ -60,6 +60,7 @@ function disableSubmitButton() {
         messageElement.textContent = "Thank you for your submission!";
         messageElement.style.color = "green";
         messageElement.style.display = "block";
+        location.reload();
       } else {
         messageElement.textContent =
           "There was an error with your submission. Please try again.";

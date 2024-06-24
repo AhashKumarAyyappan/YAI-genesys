@@ -4,17 +4,15 @@ function validatePhoneNumber(input) {
 }
 const disableSubmitButton = () => {
   const button1 = document.getElementById("submitpage");
-  const mobileCheck = document.getElementById("customerMobileNo").value;
-  const agentCheck = document.getElementById("agentName").value;
-   if (!mobileCheck || !agentCheck) {
   button1.disabled = true;
   button1.style.cursor = "not-allowed";
   button1.style.opacity = "0.3";
-   }
+   
 };
 
 
  function submitForm() {
+ disableSubmitButton();
 
   const customerMobileNo = document.getElementById("customerMobileNo").value;
   const agentName = document.getElementById("agentName").value;
@@ -30,7 +28,6 @@ const disableSubmitButton = () => {
     messageElement.style.display = "block";
     return;
   }
- disableSubmitButton();
   // Prepare data for API call
   const data = {
     botId: "x1713349984836",

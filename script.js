@@ -30,7 +30,7 @@ function disableSubmitButton() {
   }
   // Prepare data for API call
   const data = {
-    botId: "x1713349984836",
+    botId: "x1713349982667",
     sender: senderr,
     data: {
       event: {
@@ -49,7 +49,7 @@ function disableSubmitButton() {
     headers: {
       "Content-Type": "application/json",
       Accept: "application/json",
-      "x-api-key": "4VJXybunT7tjarLxZj5x1izqrcFM3Nr-bhfV1TOi",
+      "x-api-key": "08NLNWKu00T0p--MiRECJvRkdng1j2lrbSNXrzE6",
     },
     body: JSON.stringify(data),
   })

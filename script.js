@@ -65,7 +65,7 @@ function disableSubmitButton() {
             }, 2000)
       } else {
         messageElement.textContent =
-          "There was an error with your submission. Please try again.";
+          "There was an error with your submission. Please try again...";
         messageElement.style.color = "red";
         messageElement.style.display = "block";
       }

@@ -71,6 +71,7 @@ function disableSubmitButton() {
       }
     })
     .catch((error) => {
+      console.error("API call failed:", error);
       messageElement.textContent =
         "There was an error with your submission. Please try again.";
       messageElement.style.color = "red";

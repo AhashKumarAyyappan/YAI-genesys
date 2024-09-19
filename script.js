@@ -19,7 +19,7 @@ function disableSubmitButton() {
   const formElement = document.getElementById("userForm");
   const headingElement = document.getElementById("formHeading");
   const senderr = customerMobileNo.substring(0, 8) + agentName.substring(0, 8);
-  alret("Click OK to confirm that you are creating a ticket." + agentName) 
+  //alret("Click OK to confirm that you are creating a ticket." + agentName) 
 
   // Validate form inputs
   if (!customerMobileNo || !agentName) {

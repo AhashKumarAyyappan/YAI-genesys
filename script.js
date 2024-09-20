@@ -21,7 +21,7 @@ function disableSubmitButton() {
   const formElement = document.getElementById("userForm");
   const headingElement = document.getElementById("formHeading");
   const senderr = customerMobileNo.substring(0, 8) + agentName.substring(0, 8);
-   const agentRealName = document.getElementById("agentName");
+   const agentSelectElement = document.getElementById("agentName");
 
     // Get the selected option's text (this is the agent's name)
     const selectedAgentName = agentSelectElement.options[agentSelectElement.selectedIndex].text;

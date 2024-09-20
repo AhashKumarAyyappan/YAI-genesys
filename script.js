@@ -29,6 +29,8 @@ function disableSubmitButton() {
     messageElement.style.display = "block";
     return;
   }
+
+alert("You are the right agent name " + agentName);
   // Prepare data for API call
   const data = {
     botId: "x1713349982667",

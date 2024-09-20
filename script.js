@@ -17,7 +17,7 @@ function disableSubmitButton() {
    
   const customerMobileNo = document.getElementById("customerMobileNo").value;
   const agentName = document.getElementById("agentName").value;
-   const agentRealName = document.getElementById("agentName")
+   const agentRealName = document.getElementById("agentName").text
   const messageElement = document.getElementById("message");
   const formElement = document.getElementById("userForm");
   const headingElement = document.getElementById("formHeading");

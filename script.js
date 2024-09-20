@@ -17,6 +17,7 @@ function disableSubmitButton() {
    
   const customerMobileNo = document.getElementById("customerMobileNo").value;
   const agentName = document.getElementById("agentName").value;
+   const agentRealName = document.getElementById("agentName")
   const messageElement = document.getElementById("message");
   const formElement = document.getElementById("userForm");
   const headingElement = document.getElementById("formHeading");
@@ -30,7 +31,7 @@ function disableSubmitButton() {
     return;
   }
 
-alert("You are the right agent name " + agentName);
+alert("Click OK to confirm that " + agentRealName + " is creating a ticket.");
   // Prepare data for API call
   const data = {
     botId: "x1713349982667",
